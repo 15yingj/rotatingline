@@ -1,0 +1,40 @@
+
+public class Screen {
+	
+	private int width;
+	private int height;
+	
+	public Screen(){
+		this.width=100;
+		this.height=100;
+	}
+	
+	public Screen(int width, int height){
+		this.width=width;
+		this.height=height;
+	}
+
+	//getters and setters
+		public int getWidth() {
+			return width;
+		}
+		public void setWidth(int width) {
+			this.width = width;
+		}
+		public int getHeight() {
+			return height;
+		}
+		public void setHeight(int height) {
+			this.height = height;
+		}
+
+		
+	public static void main(String[] args) {
+		Screen a = new Screen(10,20);
+
+		System.out.println("width: " + a.getWidth());
+		System.out.println("height: " + a.getHeight());
+
+	}
+	
+}
